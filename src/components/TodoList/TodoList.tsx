@@ -5,5 +5,5 @@ interface ITodoListProps {
 }
 
 export default function TodoList({ children }: ITodoListProps) {
-  return <ul className="lg:max-w-4xl w-full mx-auto flex flex-col gap-3">{children}</ul>;
+  return <ul className="flex flex-col w-full justify-center gap-3">{children}</ul>;
 }

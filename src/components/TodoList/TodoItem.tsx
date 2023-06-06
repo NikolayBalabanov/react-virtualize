@@ -62,7 +62,7 @@ export default class TodoItem extends Component<ITodoItemProps, ITodoItemState> 
   public render() {
     const { descr, status, title } = this.props.task;
     return (
-      <li>
+      <li className="flex w-[1000px]">
         <div className="flex rounded-2xl overflow-hidden border border-gray-400 dark-mode dark:bg-slate-600 shadow-md">
           <ButtonDone
             isDisabled={status === EStatus.archived}

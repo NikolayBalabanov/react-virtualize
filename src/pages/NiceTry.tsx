@@ -12,7 +12,6 @@ import { getPageCount } from '../utils/getPageCount';
 export const NiceTry = () => {
   const [posts, setPosts] = useState<IPost[]>([]);
   const [totalPages, setTotalPages] = useState(0);
-  // eslint-disable-next-line no-unused-vars
   const [limit, setLimit] = useState<number>(10);
   const [page, setPage] = useState<number>(1);
   const lastElement = useRef<HTMLDivElement | null>(null);

@@ -24,8 +24,13 @@ export default class MainLayout extends Component<IMainLayoutProps, IMainLayoutS
     return (
       <div className="flex flex-col sm:gap-3 gap-2 items-center">
         <TodoList>
-          {[...Array(30000).keys()].map((item) => (
-            <li key={item}>Row {item}</li>
+          {[...Array(30000).keys()].map((item, index) => (
+            <li
+              key={item}
+              className={`w-[1000px] flex justify-center ${index % 2 === 0 ? 'odd' : 'even'}`}
+            >
+              Row {item}
+            </li>
           ))}
         </TodoList>
       </div>

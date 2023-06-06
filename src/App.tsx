@@ -13,13 +13,15 @@ function App() {
     <ThemeProvider>
       <div className="mx-auto min-w-[320px] max-w-[1440px]">
         <Header />
-        <Routes>
-          <Route path="/" element={<Main filterVal={EStatus.active} />} />
-          <Route path="/bad" element={<Main filterVal={EStatus.active} />} />
-          <Route path="/nice-try" element={<NiceTry />} />
-          <Route path="/react-window" element={<ReactWindow />} />
-          <Route path="/*" element={<Error />} />
-        </Routes>
+        <main className="px-3 sm:py-10 py-3">
+          <Routes>
+            <Route path="/" element={<Main filterVal={EStatus.active} />} />
+            <Route path="/bad" element={<Main filterVal={EStatus.active} />} />
+            <Route path="/nice-try" element={<NiceTry />} />
+            <Route path="/react-window" element={<ReactWindow />} />
+            <Route path="/*" element={<Error />} />
+          </Routes>
+        </main>
       </div>
     </ThemeProvider>
   );

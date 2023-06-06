@@ -12,10 +12,6 @@ export default class Main extends Component<IMainProps> {
   }
   render() {
     const filterVal = this.props.filterVal;
-    return (
-      <main className="px-3 sm:py-10 py-3">
-        <MainLayout filterVal={filterVal} />
-      </main>
-    );
+    return <MainLayout filterVal={filterVal} />;
   }
 }
